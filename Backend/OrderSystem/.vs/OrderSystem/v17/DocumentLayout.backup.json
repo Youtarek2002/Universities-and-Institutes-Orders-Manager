@@ -1,0 +1,175 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\youssef\\source\\repos\\OrderSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A9D2F0DF-E451-4FE0-8022-13770F220DB0}|OrderSystem\\OrderSystem.csproj|c:\\users\\youssef\\source\\repos\\ordersystem\\ordersystem\\dtos\\filterorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9D2F0DF-E451-4FE0-8022-13770F220DB0}|OrderSystem\\OrderSystem.csproj|solutionrelative:ordersystem\\dtos\\filterorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9D2F0DF-E451-4FE0-8022-13770F220DB0}|OrderSystem\\OrderSystem.csproj|c:\\users\\youssef\\source\\repos\\ordersystem\\ordersystem\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9D2F0DF-E451-4FE0-8022-13770F220DB0}|OrderSystem\\OrderSystem.csproj|solutionrelative:ordersystem\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9D2F0DF-E451-4FE0-8022-13770F220DB0}|OrderSystem\\OrderSystem.csproj|c:\\users\\youssef\\source\\repos\\ordersystem\\ordersystem\\dtos\\infodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9D2F0DF-E451-4FE0-8022-13770F220DB0}|OrderSystem\\OrderSystem.csproj|solutionrelative:ordersystem\\dtos\\infodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9D2F0DF-E451-4FE0-8022-13770F220DB0}|OrderSystem\\OrderSystem.csproj|c:\\users\\youssef\\source\\repos\\ordersystem\\ordersystem\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9D2F0DF-E451-4FE0-8022-13770F220DB0}|OrderSystem\\OrderSystem.csproj|solutionrelative:ordersystem\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9D2F0DF-E451-4FE0-8022-13770F220DB0}|OrderSystem\\OrderSystem.csproj|c:\\users\\youssef\\source\\repos\\ordersystem\\ordersystem\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9D2F0DF-E451-4FE0-8022-13770F220DB0}|OrderSystem\\OrderSystem.csproj|solutionrelative:ordersystem\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9D2F0DF-E451-4FE0-8022-13770F220DB0}|OrderSystem\\OrderSystem.csproj|c:\\users\\youssef\\source\\repos\\ordersystem\\ordersystem\\mappers\\ordermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9D2F0DF-E451-4FE0-8022-13770F220DB0}|OrderSystem\\OrderSystem.csproj|solutionrelative:ordersystem\\mappers\\ordermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9D2F0DF-E451-4FE0-8022-13770F220DB0}|OrderSystem\\OrderSystem.csproj|c:\\users\\youssef\\source\\repos\\ordersystem\\ordersystem\\dtos\\getorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9D2F0DF-E451-4FE0-8022-13770F220DB0}|OrderSystem\\OrderSystem.csproj|solutionrelative:ordersystem\\dtos\\getorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9D2F0DF-E451-4FE0-8022-13770F220DB0}|OrderSystem\\OrderSystem.csproj|c:\\users\\youssef\\source\\repos\\ordersystem\\ordersystem\\validators\\validator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9D2F0DF-E451-4FE0-8022-13770F220DB0}|OrderSystem\\OrderSystem.csproj|solutionrelative:ordersystem\\validators\\validator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9D2F0DF-E451-4FE0-8022-13770F220DB0}|OrderSystem\\OrderSystem.csproj|c:\\users\\youssef\\source\\repos\\ordersystem\\ordersystem\\dtos\\editpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9D2F0DF-E451-4FE0-8022-13770F220DB0}|OrderSystem\\OrderSystem.csproj|solutionrelative:ordersystem\\dtos\\editpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InfoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\youssef\\source\\repos\\OrderSystem\\OrderSystem\\DTOs\\InfoDTO.cs",
+              "RelativeDocumentMoniker": "OrderSystem\\DTOs\\InfoDTO.cs",
+              "ToolTip": "C:\\Users\\youssef\\source\\repos\\OrderSystem\\OrderSystem\\DTOs\\InfoDTO.cs",
+              "RelativeToolTip": "OrderSystem\\DTOs\\InfoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:38:46.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderMapper.cs",
+              "DocumentMoniker": "C:\\Users\\youssef\\source\\repos\\OrderSystem\\OrderSystem\\Mappers\\OrderMapper.cs",
+              "RelativeDocumentMoniker": "OrderSystem\\Mappers\\OrderMapper.cs",
+              "ToolTip": "C:\\Users\\youssef\\source\\repos\\OrderSystem\\OrderSystem\\Mappers\\OrderMapper.cs",
+              "RelativeToolTip": "OrderSystem\\Mappers\\OrderMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T08:54:53.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetOrderDTO.cs",
+              "DocumentMoniker": "C:\\Users\\youssef\\source\\repos\\OrderSystem\\OrderSystem\\DTOs\\GetOrderDTO.cs",
+              "RelativeDocumentMoniker": "OrderSystem\\DTOs\\GetOrderDTO.cs",
+              "ToolTip": "C:\\Users\\youssef\\source\\repos\\OrderSystem\\OrderSystem\\DTOs\\GetOrderDTO.cs",
+              "RelativeToolTip": "OrderSystem\\DTOs\\GetOrderDTO.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T07:17:56.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FilterOrderDTO.cs",
+              "DocumentMoniker": "C:\\Users\\youssef\\source\\repos\\OrderSystem\\OrderSystem\\DTOs\\FilterOrderDTO.cs",
+              "RelativeDocumentMoniker": "OrderSystem\\DTOs\\FilterOrderDTO.cs",
+              "ToolTip": "C:\\Users\\youssef\\source\\repos\\OrderSystem\\OrderSystem\\DTOs\\FilterOrderDTO.cs*",
+              "RelativeToolTip": "OrderSystem\\DTOs\\FilterOrderDTO.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T06:37:49.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientsController.cs",
+              "DocumentMoniker": "C:\\Users\\youssef\\source\\repos\\OrderSystem\\OrderSystem\\Controllers\\ClientsController.cs",
+              "RelativeDocumentMoniker": "OrderSystem\\Controllers\\ClientsController.cs",
+              "ToolTip": "C:\\Users\\youssef\\source\\repos\\OrderSystem\\OrderSystem\\Controllers\\ClientsController.cs",
+              "RelativeToolTip": "OrderSystem\\Controllers\\ClientsController.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAYwEcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T11:51:03.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Validator.cs",
+              "DocumentMoniker": "C:\\Users\\youssef\\source\\repos\\OrderSystem\\OrderSystem\\Validators\\Validator.cs",
+              "RelativeDocumentMoniker": "OrderSystem\\Validators\\Validator.cs",
+              "ToolTip": "C:\\Users\\youssef\\source\\repos\\OrderSystem\\OrderSystem\\Validators\\Validator.cs",
+              "RelativeToolTip": "OrderSystem\\Validators\\Validator.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAADgv1wAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T12:09:29.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\youssef\\source\\repos\\OrderSystem\\OrderSystem\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "OrderSystem\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\youssef\\source\\repos\\OrderSystem\\OrderSystem\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "OrderSystem\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAQwDYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T11:38:48.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\youssef\\source\\repos\\OrderSystem\\OrderSystem\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "OrderSystem\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\youssef\\source\\repos\\OrderSystem\\OrderSystem\\Models\\Order.cs",
+              "RelativeToolTip": "OrderSystem\\Models\\Order.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T07:15:38.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EditPassword.cs",
+              "DocumentMoniker": "C:\\Users\\youssef\\source\\repos\\OrderSystem\\OrderSystem\\DTOs\\EditPassword.cs",
+              "RelativeDocumentMoniker": "OrderSystem\\DTOs\\EditPassword.cs",
+              "ToolTip": "C:\\Users\\youssef\\source\\repos\\OrderSystem\\OrderSystem\\DTOs\\EditPassword.cs",
+              "RelativeToolTip": "OrderSystem\\DTOs\\EditPassword.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T08:00:29.315Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
