@@ -1,0 +1,83 @@
+<div class="main">
+    <div class="content">
+        <div class="images">
+            <img style="width: 130px; height: 130px;"  src="assets/Nasps_Logoonly (2).png" alt="image">
+            <img  style="margin-left: -100px; width: 400px; height: 96px;" src="assets/Nasps_Logotext.png" alt="image">
+        </div>
+        <div class="navs">
+            <h2 id="myorders"   (click)="setColor($event)"  routerLink="/orders" [queryParams]="{action: 'myorders'}">My Orders</h2>   
+            <h2 *ngIf="role>2" id="allorders" (click)="setColor($event)" routerLink="/orders" [queryParams]="{action: 'allorders'}">All Orders</h2>        
+            <h2 *ngIf="role%2==1" routerLink="/clients" id="unis" (click)="setColor($event)" [queryParams]="{action: 'unis'}">Universities</h2>        
+            <h2 *ngIf="role%2==0 || role==5" id="insts" (click)="setColor($event)" routerLink="/clients" [queryParams]="{action: 'insts'}">Institutes</h2>     
+        </div>
+         <p-menu #menu [model]="gfg" [popup]="true"></p-menu>
+        <p-button styleClass="prime-button-override" (onClick)="menu.toggle($event)"> <i class="pi pi-user" style="font-size: 50px; background:transparent; border-radius: 50%;"></i></p-button>
+
+    </div>
+</div>
+
+<p-dialog (onHide)="onClose()" header="Edit Info"[dismissableMask]="false" [modal]="true" [(visible)]="showmodal" [style]="{  width: '35rem' }">
+    <div id="content2" class="content2">
+      <form [formGroup]="editform" (ngSubmit)="editinfo(editform)">
+          <p-floatLabel *ngIf="!showpasswordbutton" style="grid-column: span 2;" >
+            <input  pInputText id="userName" formControlName="userName" />
+            <label for="userName">UserName</label>
+          </p-floatLabel>
+    <p-floatLabel *ngIf="!showpasswordbutton" >
+      <input pInputText  id="firstName" formControlName="firstName" />
+      <label for="firstName">First Name</label>
+    </p-floatLabel>
+    
+    <p-floatLabel *ngIf="!showpasswordbutton">
+      <input pInputText  id="lastName" formControlName="lastName"/>
+      <label for="lastName">Last Name</label>
+    </p-floatLabel >
+    <button type="button" *ngIf="!showpasswordbutton" (click)="togglepassword()" class="formbutton">Confirm</button>
+    <p-floatLabel *ngIf="showpasswordbutton"  style="grid-column: span 2;">
+        <input pInputText type="password"  id="password" formControlName="password" placeholder="Please Enter Password to confrim changes"/>
+        <!-- <label *ngIf="!editform.get('password')?.touched" for="password">Please Enter Password to confrim changes</label> -->
+      </p-floatLabel>
+      <button (click)="onClose()" *ngIf="showpasswordbutton" class="formbutton" type="submit">Submit</button>
+
+    </form>
+  </div>
+    </p-dialog>
+
+
+<p-dialog (onHide)="onClose()" header="Change Password"[dismissableMask]="false" [modal]="true" [(visible)]="showpasswordmodal" [style]="{  width: '35rem' }">
+      <div id="content2" class="content2">
+        <form [formGroup]="passwordform" (ngSubmit)="changepassword(passwordform)">
+            <!-- <p-floatLabel *ngIf="!showpasswordbutton" style="grid-column: span 2;" >
+              <input  pInputText id="userName" formControlName="userName" />
+              <label for="userName">UserName</label>
+            </p-floatLabel> -->
+      <!-- <p-floatLabel *ngIf="!showpasswordbutton" >
+        <input pInputText  id="firstName" formControlName="firstName" />
+        <label for="firstName">First Name</label>
+      </p-floatLabel> -->
+      
+      <!-- <p-floatLabel *ngIf="!showpasswordbutton">
+        <input pInputText  id="lastName" formControlName="lastName"/>
+        <label for="lastName">Last Name</label>
+      </p-floatLabel > -->
+      <!-- <button type="button" *ngIf="!showpasswordbutton" (click)="togglepassword()" class="formbutton">Confirm</button> -->
+      <p-floatLabel style="grid-column: span 2;">
+          <input pInputText type="password"  id="password" formControlName="password"/>
+          <label for="password">Password</label>
+      </p-floatLabel>
+
+      <p-floatLabel style="grid-column: span 2;">
+        <input pInputText type="password"  id="newPassword" formControlName="newPassword"/>
+        <label for="newPassword">New Password</label>
+    </p-floatLabel>
+
+    <p-floatLabel style="grid-column: span 2;">
+      <input pInputText type="password"  id="confirmpassword" formControlName="confirmpassword"/>
+      <label for="confirmpassword">Confirm Password</label>
+  </p-floatLabel>
+        <button (click)="onClose()" class="formbutton" type="submit">Submit</button>
+  
+      </form>
+    </div>
+      </p-dialog>
+    <p-toast  [life]="2000"></p-toast>

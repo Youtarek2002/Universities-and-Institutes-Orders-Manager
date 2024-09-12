@@ -1,0 +1,72 @@
+<div class="main">
+    <div class="content">    
+        <!-- <div *ngFor="let client of clients; let i = index;">
+          <div class="forcontent">
+          <div class="client">
+            <h1>Name:{{client.name}}</h1>
+            <h1>Fixed Part: {{client.fixedPart}}</h1>
+          </div>
+          <div class="buttons"> 
+            <p-button (onClick)="deleteClient(client)" styleClass="prime-button-override" > <i class="pi pi-trash" style="font-size: 25px; background:transparent; border-radius: 50%; transform: translateY(-10%);"></i></p-button>
+            <p-button (onClick)="handleEdit(client)" styleClass="prime-button-override" > <i class="pi pi-pencil" style="font-size: 25px; background:transparent; border-radius: 50%;transform: translateY(-10%);"></i></p-button>
+          </div>
+        </div>
+        </div> -->
+        <button *ngIf="role>2 && role<5" (click)="togglemodal()"><i class="image pi pi-plus" style="font-size: 15px; transform: translateY(-3%);"></i>{{modalmessage}}</button>
+        <p-table 
+        [value]="clients" 
+        styleClass="p-datatable-gridlines" 
+        [tableStyle]="{ 'min-width': '50rem' }">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Name</th>
+                    <th>Fixed Part</th>
+                    <th *ngIf="role>2">Actions</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-client>
+                <tr>
+                    <td>{{client.name }}</td>
+                    <td>{{ client.fixedPart }}</td>
+                    <td *ngIf="role>2">
+                      <div class="buttons">
+                        <p-button (onClick)="deleteClient(client)" styleClass="prime-button-override" > <i class="pi pi-trash" style="font-size: 25px; background:transparent; border-radius: 50%; transform: translateY(-10%);"></i></p-button>
+                        <p-button (onClick)="handleEdit(client)" styleClass="prime-button-override" > <i class="pi pi-pencil" style="font-size: 25px; background:transparent; border-radius: 50%;transform: translateY(-10%);"></i></p-button>
+                        <p-button pTooltip="Show client info" showDelay="800" hideDelay="300" (onClick)="GetClientInfo(client)" styleClass="prime-button-override" > <i class="pi pi-eye" style="font-size: 25px; background:transparent; border-radius: 50%;transform: translateY(-10%);"></i></p-button>
+
+                      </div>
+                    </td>
+                </tr>
+            </ng-template>
+    </p-table>
+    
+    </div>
+  </div>
+    <p-dialog (onHide)="onClose()" header="{{modalmessage}}"[dismissableMask]="true" [modal]="true" [(visible)]="showmodal" [style]="{  width: '35rem' }">
+      <div id="content2" class="content2">
+        <form [formGroup]="clientform" (ngSubmit)="handleClient(clientform)">
+            <p-floatLabel >
+              <input pInputText id="name" formControlName="name" />
+              <label for="name">Client Name</label>
+            </p-floatLabel>
+    
+      
+      <p-floatLabel >
+        <input pInputText  id="fixedPart" formControlName="fixedPart" />
+        <label for="fixedPart">Fixed Part</label>
+      </p-floatLabel>
+        <button class="formbutton" type="submit">{{modalmessage}}</button>
+      </form>
+    </div>
+      </p-dialog>
+
+      <p-dialog header="{{currentclient}} Info"[dismissableMask]="true" [modal]="true" [(visible)]="showinfo" [style]="{  width: '35rem' }">
+        <div id="content2" class="content3">
+           <h3 *ngIf="showinfo">Total Orders:{{clientinfo.totalOrders}}</h3>
+           <h3 *ngIf="showinfo">Approved Orders:{{clientinfo.approvedOrders}}</h3>
+           <h3 *ngIf="showinfo">Approved Certificates:{{clientinfo.approvedSerials}}</h3>
+
+
+      </div>
+        </p-dialog>
+      <p-toast  [life]="2000"></p-toast>

@@ -1,0 +1,110 @@
+
+<div class="main">
+    <div class="content">
+        <form [formGroup]="signupform" (ngSubmit)="signup()">
+            <h3>Sign-Up</h3>
+            <!-- <label for="email">Email:</label> -->
+            <!-- <input type="text" formControlName="email" placeholder="Email" id="username"> -->
+            <p-floatLabel class="area">
+                <input pInputText id="email" formControlName="email" />
+                <label for="email">Email</label>
+                <div *ngIf="  
+                (signupform.get('email')?.dirty || signupform.get('email')?.touched)">
+                <span class="text-danger"
+                *ngIf="getErrorMessage(signupform.get('email'))">
+                {{getErrorMessage(signupform.get('email'))}}
+                </span>
+                <!-- <span class="text-danger"
+                *ngIf="signupform.get('email')?.errors?.['required']">
+                This field is required.
+                </span>
+                <span class="text-danger"
+                *ngIf="listerrors(signupform.get('email')?.errors)">
+                minimum
+                </span> -->
+            </div>
+            </p-floatLabel>
+            <p-floatLabel class="area">
+                <input pInputText id="username" formControlName="username" />
+                <label for="username">Username</label>
+            <div *ngIf=" 
+                (signupform.get('username')?.dirty || signupform.get('username')?.touched)">
+                <span class="text-danger"
+                *ngIf="getErrorMessage(signupform.get('username'))">
+                {{getErrorMessage(signupform.get('username'))}}
+            </span>
+            </div>
+            </p-floatLabel>
+            <div class="names">
+                <!-- <div class="namescolumn"> -->
+                <p-floatLabel class="area">
+                    <input pInputText id="firstname" formControlName="firstname" />
+                    <label for="firstname">First Name</label>
+                    <!-- <span *ngIf="signupform.get('password')?.touched && signupform.get('password')?.errors?.['required']">
+                        Enter a Password
+                      </span>              -->
+                      <div *ngIf=" 
+                (signupform.get('firstname')?.dirty || signupform.get('firstname')?.touched)">
+                <span class="text-danger"
+                *ngIf="getErrorMessage(signupform.get('firstname'))">
+                {{getErrorMessage(signupform.get('firstname'))}}
+            </span>
+            </div>
+                    </p-floatLabel>
+
+                <!-- </div> -->
+            <!-- <div class="namescolumn"> -->
+                <p-floatLabel class="area">
+                    <input pInputText id="lastname" formControlName="lastname"/>
+                    <label for="lastname">Last Name</label>
+                    <!-- <span *ngIf="signupform.get('password')?.errors?.['required']">Enter a Password</span> -->
+                    <div *ngIf=" 
+                (signupform.get('lastname')?.dirty || signupform.get('lastname')?.touched)">
+                <span class="text-danger"
+                *ngIf="getErrorMessage(signupform.get('lastname'))">
+                {{getErrorMessage(signupform.get('lastname'))}}
+            </span>
+            </div>
+                </p-floatLabel> 
+            <!-- </div> -->
+            </div>
+            <!-- <label for="password">Password</label>
+            <input type="password" formControlName="password" placeholder="Password" id="password"> -->
+            <p-floatLabel class="area">
+                <input  pInputText type="password" id="password" formControlName="password" />
+                <label for="password">Password</label>
+                <div *ngIf=" 
+                (signupform.get('password')?.dirty || signupform.get('password')?.touched)">
+                <span class="text-danger"
+                *ngIf="getErrorMessage(signupform.get('password'))">
+                {{getErrorMessage(signupform.get('password'))}}
+            </span>
+            <span class="text-danger"
+                *ngIf="signupform.errors?.['notvalid'] && !signupform.get('password')?.errors ">
+                {{errorr}}
+            </span>
+            </div>
+            </p-floatLabel>
+            <!-- <span *ngIf="signupform.get('password')?.errors?.['required']">Enter a Password</span> -->
+            <p-floatLabel class="area">
+                <input pInputText type="password" id="confirmpassword" formControlName="confirmpassword" />
+                <label for="confirmpassword">Confrim Password</label>
+                <div *ngIf=" 
+                (signupform.get('confirmpassword')?.dirty || signupform.get('confirmpassword')?.touched)">
+                <span class="text-danger"
+                *ngIf="getErrorMessage(signupform.get('confirmpassword'))">
+                {{getErrorMessage(signupform.get('confirmpassword'))}}
+            </span>
+            <span class="text-danger"
+                *ngIf="signupform.errors?.['mismatch'] && !signupform.get('confirmpassword')?.errors?.['required'] ">
+                Passwords don't match
+            </span>
+            </div>
+            </p-floatLabel>  
+            <button type="submit">Sign-Up</button>
+            <a routerLink="/login">Already have an account? Log In Here</a>
+
+        </form>
+    </div>
+
+</div>

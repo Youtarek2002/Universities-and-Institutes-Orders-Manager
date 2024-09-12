@@ -1,0 +1,27 @@
+
+<div class="main">
+    <div class="content">
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+            <h3>Login</h3>
+            <!-- <label for="email">Email:</label> -->
+            <!-- <input type="text" formControlName="email" placeholder="Email" id="username"> -->
+            <p-floatLabel class="area">
+                <input pInputText id="email" formControlName="email" />
+                <label for="email">Email</label>
+            </p-floatLabel>
+            <!-- <label for="password">Password</label>
+            <input type="password" formControlName="password" placeholder="Password" id="password"> -->
+            <p-floatLabel class="area">
+                <input pInputText type="password" id="password" formControlName="password" />
+                <label for="password">Password</label>
+            </p-floatLabel>  
+            <button type="submit">Login</button>
+            <a routerLink="/signup">new here? Sign Up now</a>
+            <!-- <p-toast/> -->
+            <!-- <p-menu class="menu" #menu [model]="gfg" [popup]="true"></p-menu>
+            <p-button (click)="menu.toggle($event)" icon="pi pi-ellipsis-v"/>  -->
+    
+        </form>
+    </div>
+
+</div>
